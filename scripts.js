@@ -22,7 +22,7 @@ function addPin(lat, lng, title, url) {
 
 // Example pins - replace with your actual blog post data
 addPin(22.40217, 58.80121, 'Wahiba Sands', 'https://medium.com/@louiebucc/22-40217-n-58-80121-e-d06aeb4c2a33');
-addPin(43.08114, -79.07580, 'Niagara Falls', 'hhttps://medium.com/@louiebucc/niagara-falls-a81df418e86f');
+addPin(43.08114, -79.07580, 'Niagara Falls', 'https://medium.com/@louiebucc/niagara-falls-a81df418e86f');
 addPin(41.86225, -87.61667, `Soldier Field`, `https://medium.com/@louiebucc/soldier-field-7e27388042e2`);
 
 // Function to toggle the menu display
