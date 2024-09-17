@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booch-world</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        h1 {
+            text-align: center;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+        }
+    
+        .logo {
+            display: block;
+            max-width: 800px; /* Set maximum width you prefer */
+            width: 100%; /* Automatically scale width to container */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 auto; /* Center the image */
+            padding: 0; /* Remove padding */
+        }
+        
+        #map {
+            height: 500px; /* Map height */
+            width: 100%;
+        }
+    
+        a {
+            color: #ffffff; /* White links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hamburger menu styles */
+        .menu-icon {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            z-index: 1001;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        #menu {
+            display: none;
+            position: fixed;
+            top: 40px;
+            left: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        #menu a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+
+            /* Centering and styling for description text */
+        .description {
+             text-align: center; /* Center text */
+             font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+            padding: 20px; /* Optional padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="https://audreybuccella.substack.com/" target="_blank">Blog</a>
+    </div>
+
+    <img src="bucc-banner.png" alt="bucc-world logo" class="logo" />
+    <div id="map"></div>
+    <div class="description">
+        Check out our travel guide by clicking on the location markers.
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script> <!-- Add this line to include your external script -->
+</body>
+</html>
